@@ -1,0 +1,484 @@
+/* Global Styles */
+body {
+  font-family: 'General Sans', Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Navigation Bar */
+/* Adding sticky properties to the header instead of .main-nav */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  background-color: #091629;
+  padding: 15px 0;
+  /* Removed these sticky properties as they're now on the header */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; */
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 12px 40px 12px 20px;
+  border: none;
+  border-radius: 50px;
+  width: 280px;
+  font-size: 14px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+/* Hero Banner - Common Styles */
+.hero-banner {
+  background-color: #091629;
+  color: white;
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Buttons */
+.primary-btn, .get-involved-btn, .donate-btn {
+  background-color: #00b0f0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.outline-btn, .learn-more-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.submit-btn {
+  padding: 12px 32px;
+  background-color: #00b0f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+}
+
+/* Read More Links */
+.read-article {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.read-article::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.read-article-home {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.read-article-home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.view-more-link {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.view-more-link .underline {
+  position: relative;
+  display: inline-block;
+}
+
+.view-more-link .underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.view-more-link .arrow {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.view-more {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 120px;
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #444;
+}
+
+.footer-top-border {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 15px 30px;
+}
+
+.footer-main {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.footer-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info {
+  margin-bottom: 80px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.icon {
+  width: 24px;
+  margin-right: 10px;
+  color: #444;
+}
+
+.contact-item a {
+  color: #444;
+}
+
+.footer-logo img {
+  height: 100px;
+}
+
+.footer-right {
+  width: 70%;
+  padding-left: 100px;
+}
+
+.newsletter {
+  margin-bottom: 40px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  background-color: #1cabe2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.links-column {
+  width: 50%;
+}
+
+.links-column ul li {
+  margin-bottom: 15px;
+}
+
+.links-column ul li a {
+  color: #444;
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #666;
+}
+
+.discover {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.discover-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.discover-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.discover-grid {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.discover-card {
+  width: 50%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 350px;
+}
+
+.discover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discover-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  color: white;
+}
+
+.discover-card-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discover-card-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.discover-card-content .read-article {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.discover-card-content .read-article::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}

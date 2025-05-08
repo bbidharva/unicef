@@ -1,0 +1,96 @@
+/* Hero Banner */
+.hero-banner {
+    height: 400px;
+  }
+  
+  .hero-banner::before {
+    background: url("../assets/tracking.png") no-repeat center center/cover;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Tracking Section */
+  .tracking-section {
+    padding: 80px 0;
+  }
+  
+  .tracking-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #000;
+  }
+  
+  .tracking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 15px;
+  }
+  
+  .tracking-form {
+    flex-basis: 45%;
+    max-width: 400px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .form-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .tracking-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .track-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #00b0f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .map-container {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 4px;
+  }

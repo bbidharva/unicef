@@ -1,0 +1,278 @@
+/* Responsive popups.css */
+
+/* Base styles */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1001; /* Increased z-index to appear above all other elements */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(245, 245, 245, 0.9); /* Added opacity for better overlay */
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #091629;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #091629;
+  font-weight: 500;
+}
+
+.popup {
+  background-color: white;
+  width: 549px;
+  max-width: 95%; /* Added max-width for responsiveness */
+  height: auto; /* Changed from fixed height to auto */
+  min-height: 600px; /* Added min-height instead of fixed height */
+  max-height: 85vh; /* Maximum viewport height */
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Centered horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  overflow-y: auto; /* Added scrolling for content if needed */
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  z-index: 10; /* Ensure close button is clickable */
+  padding: 5px; /* Larger touch target */
+}
+
+.popup-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-content {
+  padding: 60px;
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  width: 100%; /* Added for responsiveness */
+  box-sizing: border-box; /* Added to include padding in width calculation */
+}
+
+.popup h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+
+.popup p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn {
+  background-color: #00AEEF;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 14px 0;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.secondary-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+/* Media Query for Laptops */
+@media screen and (max-width: 1024px) {
+  .modal {
+    padding-top: 80px;
+  }
+  
+  .popup {
+    width: 500px;
+    min-height: 550px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  
+  .popup-content {
+    padding: 50px;
+  }
+  
+  .popup h1 {
+    font-size: 26px;
+  }
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 769px) {
+  .modal {
+    padding-top: 60px;
+  }
+  
+  .popup {
+    width: 90%;
+    min-height: 500px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .popup-content {
+    padding: 40px 30px;
+    max-width: 100%;
+  }
+  
+  .popup h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .popup p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .popup-buttons {
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+  
+  .primary-btn, .secondary-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 426px) {
+  .modal {
+    padding-top: 40px;
+  }
+  
+  .popup {
+    width: 92%;
+    min-height: 450px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .popup-content {
+    padding: 30px 20px;
+  }
+  
+  .popup h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .popup p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-close {
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+  }
+  
+  .popup-buttons {
+    flex-direction: column; /* Stack buttons on mobile */
+    gap: 15px;
+  }
+  
+  .primary-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 100%; /* Full width buttons on mobile */
+  }
+  
+  .secondary-btn {
+    padding: 10px 0;
+    font-size: 14px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+/* Display popups side by side on wide screens */
+@media (min-width: 1800px) {
+  .popups-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .popup-section {
+    flex: 0 0 auto;
+  }
+}

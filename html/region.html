@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNICEF - Regions</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/region.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600;700&display=swap" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="main-nav">
+        <div class="container nav-container">
+          <div class="logo">
+            <a href="../index.html"><img src="../assets/UNICEF-WHITE.svg" alt="UNICEF Logo"/></a>
+          </div>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="nav-links">
+            <button class="nav-close">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./region.html">Region</a></li>
+              <li><a href="./latest.html">Latest</a></li>
+              <li><a href="./academics.html">Academics</a></li>
+              <li><a href="./careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search UNICEF..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Regions Section -->
+    <section class="regions-section">
+      <div class="regions-container">
+        <h1 class="regions-title">Our Regions</h1>
+        <p class="regions-description">
+          Explore the services and support available at our regional offices, where we work closely with local communities to meet their unique needs. Each region is equipped with a dedicated team ready to assist you with personalized solutions and ensure that your experience with us is seamless.
+        </p>
+
+        <div class="search-container">
+          <div class="search-input">
+            <input type="text" placeholder="Region" />
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <!-- Modified filter input area with dropdown -->
+          <div class="filter-input">
+            <input type="text" id="filter-input" placeholder="Filter" readonly />
+            <div class="dropdown-icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="filter-dropdown">
+              <div class="dropdown-item" data-value="Asia Pacific">Asia Pacific</div>
+              <div class="dropdown-item" data-value="Europe">Europe</div>
+              <div class="dropdown-item" data-value="Africa">Africa</div>
+              <div class="dropdown-item" data-value="North America">North America</div>
+              <div class="dropdown-item" data-value="Latin America">Latin America</div>
+              <div class="dropdown-item" data-value="Middle East">Middle East</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="world-map-container">
+          <img src="../assets/world-image.png" alt="World Map with UNICEF Regions" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top-border"></div>
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-left">
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="icon">@</span>
+                <a href="mailto:info@unicef.org">info@unicef.org</a>
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fas fa-phone"></i></span>
+                <a href="tel:+18005558623">(800) 555-UNCF (8623)</a>
+              </div>
+              <div class="contact-item">
+                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span>123 Global Care Avenue, Suite 456, New York, NY 10017</span>
+              </div>
+            </div>
+            <div class="footer-logo">
+              <a href="../index.html">
+                <img src="../assets/UNICEF-BLACK.svg" alt="UNICEF Logo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <div class="newsletter">
+              <p>
+                Join our global community to receive the latest updates on UNICEF's work.<br />Together, we can build a brighter future for every child. UNICEF - for every child
+              </p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="you@example.com" />
+                <button>Sign Up</button>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <div class="links-column">
+                <ul>
+                  <li><a href="./our-work.html">Our Work</a></li>
+                  <li><a href="./about.html">About Us</a></li>
+                  <li><a href="./region.html">Region</a></li>
+                  <li><a href="./latest.html">Latest</a></li>
+                  <li><a href="./academics.html">Academics</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li><a href="./donate.html">Donate</a></li>
+                </ul>
+              </div>
+              <div class="links-column">
+                <ul>
+                  <li><a href="./donate.html">Get Involved</a></li>
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Financial Transparency</a></li>
+                  <li><a href="./tracking.html">Real Time Tracking</a></li>
+                  <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 UNICEF. All rights reserved. UNICEF is a United Nations organization working for children's rights, survival, development, and protection worldwide.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/region-filter.js"></script>
+    <script src="../js/newsletter-signup.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+  </body>
+</html>

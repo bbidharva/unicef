@@ -1,0 +1,289 @@
+/* about-responsive.css - Refined media queries for about page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    /* Hero Section */
+    .hero-section {
+      height: 550px;
+    }
+    
+    .hero-content {
+      padding-left: 60px;
+      width: 45%;
+    }
+    
+    .hero-description {
+      padding-right: 60px;
+      width: 45%;
+    }
+    
+    /* Timeline Section */
+    .timeline-section {
+      max-width: 94%;
+      padding: 70px 20px;
+    }
+    
+    /* Mission Section */
+    .mission-content {
+      max-width: 80%;
+      padding: 0 30px;
+    }
+    
+    /* Discover Section */
+    .discover-container {
+      max-width: 94%;
+      padding: 0 30px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Section */
+    .hero-section {
+      flex-direction: column;
+      height: auto;
+      padding: 60px 0;
+    }
+    
+    .hero-content {
+      width: 85%;
+      padding: 0 20px;
+      text-align: center;
+      margin: 0 auto 40px;
+    }
+    
+    .hero-description {
+      width: 85%;
+      padding: 0 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+    
+    /* Fix for Get Involved button */
+    .hero-btn {
+      display: inline-block;
+      background-color: #00b0f0;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    /* Timeline Section */
+    .timeline-section {
+      padding: 60px 20px;
+    }
+    
+    .timeline::before {
+      left: 30px;
+      transform: none;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 0 0 0 70px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+      padding-right: 20px;
+      padding-left: 70px;
+      justify-content: flex-start;
+      margin-left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: 20px;
+      right: auto;
+    }
+    
+    /* Mission Section */
+    .mission-section {
+      height: 350px;
+    }
+    
+    .mission-content {
+      padding: 0 30px;
+      width: 90%;
+    }
+    
+    .mission-content h2 {
+      font-size: 28px;
+    }
+    
+    /* Discover Section */
+    .discover {
+      padding: 50px 0;
+    }
+    
+    .discover-container {
+      padding: 0 30px;
+    }
+    
+    .discover-title {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    
+    .discover-grid {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .discover-card {
+      width: 100%;
+      height: 320px;
+    }
+    
+    .view-more {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Section */
+    .hero-section {
+      padding: 50px 0;
+    }
+    
+    .hero-content,
+    .hero-description {
+      width: 90%;
+      padding: 0 15px;
+    }
+    
+    .hero-content {
+      margin-bottom: 30px;
+    }
+    
+    .hero-content h1 {
+      font-size: 26px;
+    }
+    
+    .hero-description p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    /* Fix for Get Involved button */
+    .hero-btn {
+      display: inline-block;
+      background-color: #00b0f0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    
+    /* Timeline Section */
+    .timeline-section {
+      padding: 40px 15px;
+    }
+    
+    .timeline-item {
+      padding: 0 10px 0 50px;
+      margin-bottom: 30px;
+      gap: 15px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+      padding: 0 10px 0 50px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: 15px;
+      top: 25px;
+      width: 16px;
+      height: 16px;
+    }
+    
+    .timeline-image {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .timeline-year {
+      font-size: 17px;
+    }
+    
+    .timeline-text {
+      font-size: 13px;
+    }
+    
+    /* Mission Section */
+    .mission-section {
+      height: 280px;
+    }
+    
+    .mission-content {
+      width: 90%;
+      padding: 0 15px;
+    }
+    
+    .mission-content h2 {
+      font-size: 22px;
+    }
+    
+    /* Discover Section */
+    .discover {
+      padding: 40px 0;
+    }
+    
+    .discover-container {
+      padding: 0 15px;
+    }
+    
+    .discover-title {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+    
+    .discover-grid {
+      gap: 25px;
+    }
+    
+    .discover-card {
+      height: 230px;
+    }
+    
+    .discover-card-content {
+      padding: 15px;
+    }
+    
+    .discover-card-content h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    
+    .discover-card-content p {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .view-more {
+      margin-top: 25px;
+      text-align: center;
+    }
+    
+    .view-more-link {
+      font-size: 15px;
+    }
+  }

@@ -1,0 +1,127 @@
+/* careers-responsive.css - Media queries for careers page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .positions-section {
+      max-width: 94%;
+      padding: 50px 30px;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+    
+    .hero-content p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 300px;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+    }
+    
+    .hero-content p {
+      font-size: 15px;
+    }
+    
+    /* Positions Section */
+    .positions-section {
+      padding: 40px 30px;
+    }
+    
+    .positions-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .job-listing {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+    }
+    
+    .job-title {
+      font-size: 18px;
+    }
+    
+    .job-description {
+      font-size: 15px;
+    }
+    
+    .job-details {
+      margin-bottom: 12px;
+    }
+    
+    .job-location, .job-type {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 270px;
+    }
+    
+    .hero-content {
+      padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+      font-size: 24px;
+    }
+    
+    .hero-content p {
+      font-size: 14px;
+    }
+    
+    /* Positions Section */
+    .positions-section {
+      padding: 30px 15px;
+    }
+    
+    .positions-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    
+    .job-listing {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .job-title {
+      font-size: 17px;
+    }
+    
+    .job-description {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    
+    .job-details {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .job-location, .job-type {
+      margin-right: 0;
+      margin-bottom: 0;
+      font-size: 13px;
+    }
+    
+    .apply-button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }

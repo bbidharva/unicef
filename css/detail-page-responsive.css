@@ -1,0 +1,152 @@
+/* detail-page-responsive.css - Media queries for detail page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .detail-container,
+    .discover-container {
+      max-width: 90%;
+    }
+    
+    .detail-title {
+      font-size: 32px;
+    }
+    
+    .detail-subtitle {
+      font-size: 17px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    .detail-content,
+    .discover {
+      padding: 40px 0;
+    }
+    
+    .detail-container {
+      padding: 0 30px;
+    }
+    
+    .detail-title {
+      font-size: 28px;
+    }
+    
+    .detail-subtitle {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    
+    .detail-image {
+      margin-bottom: 30px;
+    }
+    
+    .detail-text p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    
+    /* Discover Section */
+    .discover-container {
+      padding: 0 30px;
+    }
+    
+    .discover-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    
+    .discover-grid {
+      flex-direction: column;
+      gap: 25px;
+    }
+    
+    .discover-card {
+      width: 100%;
+      height: 300px;
+    }
+    
+    .discover-card-content h3 {
+      font-size: 22px;
+    }
+    
+    .discover-card-content p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    .detail-content,
+    .discover {
+      padding: 30px 0;
+    }
+    
+    .detail-container {
+      padding: 0 15px;
+    }
+    
+    .detail-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .detail-subtitle {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .detail-image {
+      margin-bottom: 25px;
+    }
+    
+    .detail-text p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    
+    /* Discover Section */
+    .discover-container {
+      padding: 0 15px;
+    }
+    
+    .discover-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    
+    .discover-grid {
+      gap: 20px;
+    }
+    
+    .discover-card {
+      height: 250px;
+    }
+    
+    .discover-card-content {
+      padding: 20px;
+    }
+    
+    .discover-card-content h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    
+    .discover-card-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    .discover-card-content .read-article {
+      font-size: 14px;
+    }
+    
+    .view-more {
+      margin-top: 20px;
+    }
+    
+    .view-more-link {
+      font-size: 15px;
+    }
+  }

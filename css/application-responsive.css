@@ -1,0 +1,125 @@
+/* application-responsive.css - Media queries for application page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .application-section {
+      max-width: 94%;
+      padding: 50px 20px;
+    }
+    
+    .application-form-container {
+      max-width: 580px;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 300px;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+    }
+    
+    /* Application Form Section */
+    .application-section {
+      padding: 40px 30px;
+    }
+    
+    .application-title {
+      font-size: 28px;
+    }
+    
+    .application-subtitle {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+    
+    .application-form-container {
+      max-width: 100%;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    /* Responsive button group */
+    .button-group {
+      flex-direction: column-reverse;
+      gap: 15px;
+      align-items: center;
+    }
+    
+    .return-link {
+      margin-top: 10px;
+    }
+    
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 250px;
+    }
+    
+    .hero-content {
+      padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+      font-size: 24px;
+    }
+    
+    /* Application Form Section */
+    .application-section {
+      padding: 30px 15px;
+    }
+    
+    .application-title {
+      font-size: 24px;
+    }
+    
+    .application-subtitle {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    
+    .form-group label {
+      font-size: 14px;
+    }
+    
+    .form-input, 
+    .form-textarea, 
+    .file-input-label {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+    
+    .form-textarea {
+      height: 100px;
+    }
+    
+    .button-group {
+      margin-top: 30px;
+    }
+    
+    .submit-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    
+    .return-link {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

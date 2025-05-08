@@ -1,0 +1,467 @@
+/* Hero Section - Fixed alignment */
+.hero {
+    position: relative;
+    background: url("../assets/child-image.jpg") no-repeat center center/cover;
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 0 100px;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+/* Mission Section - Fixed heading color */
+  .mission {
+    display: flex;
+    padding: 80px 40px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .mission-content {
+    flex: 1;
+    padding-right: 60px;
+  }
+  
+  .mission-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00b0f0;  /* Changed from blue to black */
+    line-height: 1.2;
+  }
+  
+  .mission-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .mission-image {
+    flex: 1;
+  }
+  
+  .mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Purpose Section */
+  .purpose {
+    background:  url("../assets/children-group-image.jpg") no-repeat center center/cover;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 70px 0;
+  }
+  
+  .purpose-overlay {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .purpose h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  
+/* Achievements Section */
+  .achievements {
+    display: flex;
+    padding: 70px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .achievement-content {
+    flex: 1;
+    padding-right: 60px;
+  }
+  
+  .achievement-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000;
+    line-height: 1.3;
+  }
+  
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .stat-item {
+    flex: 1 0 40%;
+    margin-bottom: 20px;
+  }
+  
+  .stat-item h3 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00b0f0;
+    margin-bottom: 5px;
+  }
+  
+  .stat-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .achievement-image {
+    flex: 1;
+  }
+  
+  .achievement-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Join Us Section - Fixed background image */
+  .join-us {
+    background: url("../assets/school-backpacks-image.jpg") no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 70px 0;
+  }
+  
+  .join-us-overlay {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .join-us h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  
+  /* Case Studies Section */
+  .case-studies {
+    padding: 70px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .case-studies h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .case-studies p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 800px;
+  }
+  
+  .case-studies-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .case-study-card {
+    flex: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .case-study-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 24px;
+  }
+  
+  .card-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .read-article-home {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .read-article-home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+  }
+  
+  .view-more-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .view-more-link .underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .view-more-link .underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+  }
+  
+  .view-more-link .arrow {
+    margin-left: 8px;
+    display: inline-block;
+  }
+  
+  /* Story Section */
+  .story {
+    background: url("../assets/courage-story-image.jpg") no-repeat center center/cover;
+    padding: 120px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 60px 0;
+  }
+  
+  .story-overlay {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .story h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  /* Image Gallery Section */
+  .image-gallery {
+    padding: 40px 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .impact-stories {
+    padding: 50px 40px 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Added heading for Latest News */
+  .latest-news-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .news-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .story-card {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .story-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .story-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .story-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .read-article, .article-link {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .read-article::after, .article-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+  }
+  
+  .view-more-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .view-more-btn {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .view-more-btn::after {
+    content: "→";
+    margin-left: 8px;
+    display: inline-block;
+  }
+  
+  .view-more-btn span {
+    position: relative;
+  }
+  
+  .view-more-btn span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+  }
+
+  /* Add these styles to your index.css file */
+
+/* Animation class for the hero text */
+.hero-content h1,
+.hero-content p,
+.hero-btn {
+  opacity: 100;
+  transform: translateY(3px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+}
+
+/* Staggered animation delay for different elements */
+.hero-content h1 {
+  transition-delay: 0.2s;
+}
+
+.hero-content p {
+  transition-delay: 0.4s;
+}
+
+.hero-btn {
+  transition-delay: 0.6s;
+}
+
+/* Class that will be added by JavaScript when scrolled into view */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for section headings throughout the page */
+.mission-content h2,
+.achievement-content h2,
+.purpose h2,
+.join-us h2,
+.case-studies h2,
+.latest-news-heading {
+  opacity: 100;
+  transform: translateY(5px);
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+}
+
+.fade-in-heading {
+  opacity: 1;
+  transform: translateY(0);
+}

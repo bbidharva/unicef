@@ -1,0 +1,132 @@
+/* tracking-responsive.css - Media queries for tracking page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .tracking-container {
+      max-width: 94%;
+      gap: 40px;
+    }
+    
+    .hero-content h1 {
+      font-size: 36px;
+    }
+    
+    .tracking-title {
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 350px;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+    
+    .hero-content p {
+      font-size: 16px;
+      padding: 0 30px;
+    }
+    
+    /* Tracking Section */
+    .tracking-section {
+      padding: 60px 0;
+    }
+    
+    .tracking-title {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+    
+    .tracking-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      padding: 0 30px;
+    }
+    
+    .tracking-form {
+      flex-basis: 100%;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .map-container {
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 500px;
+    }
+    
+    .form-title {
+      font-size: 22px;
+      text-align: center;
+    }
+    
+    .form-description {
+      text-align: center;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 300px;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+    }
+    
+    .hero-content p {
+      font-size: 15px;
+      padding: 0 15px;
+    }
+    
+    /* Tracking Section */
+    .tracking-section {
+      padding: 40px 0;
+    }
+    
+    .tracking-title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    
+    .tracking-container {
+      gap: 40px;
+      padding: 0 15px;
+    }
+    
+    .form-title {
+      font-size: 20px;
+    }
+    
+    .form-description {
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+    
+    .input-container {
+      margin-bottom: 15px;
+    }
+    
+    .tracking-input {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+    
+    .track-button {
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    
+    .map-container {
+      max-height: 300px;
+    }
+  }

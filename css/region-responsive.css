@@ -1,0 +1,84 @@
+/* region-responsive.css - Media queries for region page */
+@media screen and (max-width: 1024px) {
+    .regions-container {
+      max-width: 94%;
+    }
+    
+    .world-map-container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Region Page Specific */
+    .regions-section {
+      padding: 60px 0;
+    }
+    
+    .regions-title {
+      font-size: 36px;
+    }
+    
+    .regions-description {
+      padding: 0 20px;
+      margin-bottom: 40px;
+    }
+    
+    .search-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .world-map-container {
+      max-width: 90%;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Region Page Specific */
+    .regions-section {
+      padding: 40px 0;
+    }
+    
+    .regions-title {
+      font-size: 32px;
+    }
+    
+    .regions-description {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    
+    .search-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    
+    .search-input,
+    .filter-input {
+      width: 80%;
+      max-width: 280px;
+    }
+    
+    /* Ensure dropdown appears correctly on mobile */
+    .filter-dropdown {
+      width: 100%;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+    
+    .dropdown-item {
+      padding: 15px 20px; /* Larger touch target */
+    }
+    
+    .world-map-container {
+      max-width: 95%;
+    }
+  }

@@ -1,0 +1,124 @@
+/* our-work-responsive.css - Media queries for our-work page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .collage-section,
+    .projects-section {
+      max-width: 94%;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+    
+    .projects-grid {
+      gap: 25px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Section */
+    .hero-banner {
+      height: 320px;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+      padding: 0 30px;
+    }
+    
+    /* Collage Section */
+    .collage-section {
+      padding: 40px 0;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+      padding: 40px 0 60px;
+    }
+    
+    .projects-title {
+      font-size: 26px;
+    }
+    
+    .projects-subtitle {
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding: 0 30px;
+    }
+    
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 0 30px;
+    }
+    
+    .project-card {
+      margin-bottom: 15px;
+    }
+    
+    .project-image img {
+      height: 180px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Section */
+    .hero-banner {
+      height: 280px;
+    }
+    
+    .hero-content h1 {
+      font-size: 24px;
+      padding: 0 15px;
+    }
+    
+    /* Collage Section */
+    .collage-section {
+      padding: 30px 0;
+    }
+    
+    .collage-container {
+      padding: 0 15px;
+    }
+    
+    /* Projects Section */
+    .projects-section {
+      padding: 30px 0 50px;
+    }
+    
+    .projects-title {
+      font-size: 24px;
+    }
+    
+    .projects-subtitle {
+      font-size: 13px;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      padding: 0 15px;
+    }
+    
+    .project-card {
+      margin-bottom: 0;
+    }
+    
+    .project-title {
+      font-size: 17px;
+    }
+    
+    .project-description {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .read-article {
+      font-size: 13px;
+    }
+  }

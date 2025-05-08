@@ -1,0 +1,260 @@
+/* latest-responsive.css - Media queries for latest news page with spacing fix */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .news-section {
+      max-width: 94%;
+      padding: 60px 20px;
+    }
+    
+    .news-grid {
+      gap: 25px;
+      padding: 0;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+      padding: 0 30px;
+    }
+    
+    .hero-content p {
+      font-size: 16px;
+      padding: 0 40px;
+    }
+    
+    .view-more-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    /* Fix spacing between read-article and next card */
+    .news-card {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .news-description {
+      flex-grow: 1;
+    }
+    
+    .read-article {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 320px;
+    }
+    
+    .hero-banner::before {
+      background-size: cover;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+      padding: 0 30px;
+    }
+    
+    .hero-content p {
+      font-size: 15px;
+      padding: 0 40px;
+    }
+    
+    /* News Section */
+    .news-section {
+      padding: 40px 20px;
+      margin: 0 auto;
+    }
+    
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .news-card {
+      margin-bottom: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .news-image img {
+      height: 180px;
+    }
+    
+    .news-title {
+      font-size: 17px;
+    }
+    
+    .news-description {
+      flex-grow: 1;
+    }
+    
+    .read-article {
+      margin-top: auto;
+      margin-bottom: 10px;
+    }
+    
+    .view-more-container {
+      text-align: center;
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 280px;
+    }
+    
+    .hero-content h1 {
+      font-size: 24px;
+      padding: 0 15px;
+    }
+    
+    .hero-content p {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+    
+    /* News Section */
+    .news-section {
+      padding: 30px 15px;
+    }
+    
+    .news-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 0;
+      width: 100%;
+    }
+    
+    .news-card {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .news-image {
+      margin: 0 0 16px 0;
+      width: 100%;
+    }
+    
+    .news-image img {
+      height: 200px;
+      width: 100%;
+    }
+    
+    .news-title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .news-description {
+      font-size: 13px;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    
+    .read-article {
+      font-size: 13px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    .view-more-container {
+      text-align: center;
+      margin: 30px 0;
+      width: 100%;
+    }
+    
+    .view-more-link {
+      font-size: 15px;
+    }
+  }
+
+  /* Fix for text overflow in latest page hero section */
+
+/* Base styles */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .hero-content p {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Media queries from latest-responsive.css */
+  @media screen and (max-width: 1024px) {
+    .hero-content h1 {
+      font-size: 32px;
+      padding: 0 30px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    .hero-content p {
+      font-size: 16px;
+      padding: 0 40px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+  
+  @media screen and (max-width: 769px) {
+    .hero-content h1 {
+      font-size: 28px;
+      padding: 0 30px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    .hero-content p {
+      font-size: 15px;
+      padding: 0 40px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    .hero-content h1 {
+      font-size: 24px;
+      padding: 0 15px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    .hero-content p {
+      font-size: 14px;
+      padding: 0 20px;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }

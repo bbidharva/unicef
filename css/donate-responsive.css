@@ -1,0 +1,278 @@
+/* donate-responsive.css - Media queries for donate page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .stats-section {
+      max-width: 94%;
+      margin: 50px auto;
+    }
+    
+    .stats-row {
+      gap: 50px;
+    }
+    
+    .stats-percentage {
+      font-size: 80px;
+    }
+    
+    .stats-title {
+      font-size: 32px;
+    }
+    
+    .stats-description {
+      font-size: 16px;
+    }
+    
+    .donation-section {
+      max-width: 94%;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-content h1 {
+      font-size: 28px;
+      padding: 0 20px;
+    }
+    
+    .hero-content p {
+      font-size: 15px;
+      padding: 0 30px;
+      margin-bottom: 20px;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+      margin: 40px auto;
+    }
+    
+    .stats-item {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+    
+    .stats-item:nth-child(2) {
+      flex-direction: column;
+    }
+    
+    .stats-image {
+      width: 100%;
+      height: 250px;
+    }
+    
+    .stats-content {
+      width: 100%;
+    }
+    
+    .stats-percentage {
+      font-size: 70px;
+    }
+    
+    .stats-title {
+      font-size: 28px;
+    }
+    
+    /* Impact Story */
+    .story-container {
+      height: 250px;
+    }
+    
+    .story-title {
+      font-size: 20px;
+      max-width: 500px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 40px 20px;
+    }
+    
+    .cta-title {
+      font-size: 24px;
+    }
+    
+    /* Donation Form Section */
+    .donation-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .donation-form,
+    .donation-image {
+      flex: none;
+      width: 100%;
+    }
+    
+    .donation-image {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .form-row {
+      flex-wrap: wrap;
+    }
+    
+    .form-col {
+      flex: 1 0 45%;
+    }
+    
+    /* Popup Modal */
+    .popup {
+      width: 90%;
+      max-width: 500px;
+    }
+    
+    .popup-content h1 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-content h1 {
+      font-size: 24px;
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+    
+    .hero-content p {
+      font-size: 14px;
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    
+    .stats-row {
+      gap: 40px;
+    }
+    
+    .stats-image {
+      height: 200px;
+    }
+    
+    .stats-percentage {
+      font-size: 60px;
+    }
+    
+    .stats-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .stats-description {
+      font-size: 15px;
+    }
+    
+    /* Impact Story */
+    .story-container {
+      height: 200px;
+    }
+    
+    .story-overlay {
+      padding: 60px 15px 15px;
+    }
+    
+    .story-title {
+      font-size: 18px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 30px 15px;
+    }
+    
+    .cta-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+    /* Donation Form Section */
+    .donation-section {
+      padding: 30px 0 50px;
+    }
+    
+    .donation-container {
+      padding: 0 15px;
+    }
+    
+    .donation-details-title {
+      font-size: 22px;
+    }
+    
+    .donation-subtitle {
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    
+    .form-input, 
+    .form-textarea {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+    
+    .payment-title {
+      font-size: 18px;
+      margin: 25px 0 15px;
+    }
+    
+    .payment-note {
+      font-size: 11px;
+    }
+    
+    .form-col {
+      flex: 1 0 100%;
+    }
+    
+    .form-row .form-col:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    
+    .form-buttons {
+      margin-top: 30px;
+    }
+    
+    /* Popup Modal */
+    .popup {
+      padding: 20px 15px;
+    }
+    
+    .popup-content h1 {
+      font-size: 20px;
+    }
+    
+    .popup-content p {
+      font-size: 14px;
+    }
+    
+    .popup-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .popup-buttons button {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,117 @@
+/* academics-responsive.css - Media queries for academics page */
+
+/* Media Query for Laptop */
+@media screen and (max-width: 1024px) {
+    .resources-section {
+      max-width: 94%;
+    }
+    
+    .resource-item {
+      padding: 0 30px;
+    }
+    
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Media Query for Tablet */
+  @media screen and (max-width: 769px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 300px;
+    }
+    
+    .hero-content h1 {
+      font-size: 28px;
+    }
+    
+    /* Resources Section */
+    .resources-section {
+      padding: 50px 0;
+    }
+    
+    .resources-title {
+      font-size: 26px;
+      margin-bottom: 30px;
+      padding-left: 30px;
+    }
+    
+    .resource-item {
+      flex-direction: column;
+      margin-bottom: 40px;
+      padding: 0 30px;
+    }
+    
+    .resource-image {
+      flex-basis: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .resource-details {
+      flex-basis: auto;
+    }
+  }
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 426px) {
+    /* Hero Banner */
+    .hero-banner {
+      height: 260px;
+    }
+    
+    .hero-content {
+      padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+      font-size: 24px;
+    }
+    
+    /* Resources Section */
+    .resources-section {
+      padding: 40px 0;
+    }
+    
+    .resources-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+      padding-left: 15px;
+    }
+    
+    .resource-item {
+      margin-bottom: 35px;
+      padding: 0 15px;
+    }
+    
+    .resource-title {
+      font-size: 18px;
+    }
+    
+    .resource-description {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    
+    .resource-meta {
+      margin-bottom: 12px;
+    }
+    
+    .resource-year {
+      font-size: 13px;
+    }
+    
+    .download-button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+    
+    .view-more {
+      margin-top: 20px;
+    }
+    
+    .view-more-link {
+      font-size: 16px;
+    }
+  }

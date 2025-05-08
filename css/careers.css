@@ -1,0 +1,69 @@
+/* Hero Banner */
+.hero-banner::before {
+    background: url("../assets/solo-mother.png") no-repeat center center;
+  }
+  
+  /* Open Positions Section */
+  .positions-section {
+    padding: 60px 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .positions-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .job-listing {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .job-title {
+    color: #00b0f0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .job-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .job-location, .job-type {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .job-location i, .job-type i {
+    margin-right: 8px;
+    color: #555;
+  }
+  
+  .apply-button {
+    background-color: #00b0f0;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+  }

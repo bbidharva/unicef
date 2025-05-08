@@ -1,0 +1,150 @@
+/* Region Page Specific Styles */
+.regions-section {
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.regions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.regions-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.regions-description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.search-input {
+  position: relative;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  pointer-events: none;
+  height: 100%;
+}
+
+.filter-input {
+  position: relative;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-input input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.world-map-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.world-map-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Filter Dropdown Styles */
+.dropdown-icon {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  pointer-events: none;
+  height: 100%;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  z-index: 100;
+  display: none;
+  overflow: hidden;
+}
+
+.filter-dropdown.show {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-item.selected {
+  background-color: #e6f3fa;
+  color: #00b0f0;
+}
+
+/* Make the input field look readonly but still clickable */
+.filter-input input:focus {
+  outline: none;
+  border-color: #00b0f0;
+}
